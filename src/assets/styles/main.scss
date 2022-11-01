@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+:root{
+    --whiteColor: #fff;
+    --blackColor: #000;
+    --blueColor: #076cab;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    border: none;
+    font-style: normal;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    &:focus{
+        outline: none;
+        border: none;
+    }
+}
+body{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+button{
+    background: transparent;
+}
+.main{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+img{
+    display: block;
+}
+.container{
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header{
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--blueColor);
+    &__title{
+        color: var(--whiteColor);
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+.home__page-link{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 20;
+    border-radius: 10px;
+    background: var(--blueColor);
+    color: var(--whiteColor);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+@import './contact';
+@import './auth';

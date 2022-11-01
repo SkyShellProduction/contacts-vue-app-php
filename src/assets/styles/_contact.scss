@@ -1,0 +1,97 @@
+.contact{
+    &__title{
+        margin-bottom: 50px;
+    }
+    &__form{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    &__item{
+        margin-bottom: 30px;
+    }
+    &__control{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+.home{
+    &__contacts{
+      &-enter-active, &-leave-active, &-move{
+        transition: 0.3s linear;
+      }  
+      &-enter-from, &-leave-to{
+        opacity: 0;
+        transform: translateY(-30%);
+      }
+    }
+    &__contact-item{
+        display: flex;
+        align-items: center;
+        max-width: 750px;
+        margin: 0 auto;
+        background: linear-gradient(0deg, rgba(103, 80, 164, 0.05), rgba(103, 80, 164, 0.05)), #FFFBFE;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        margin-bottom: 30px;
+        padding: 10px 15px;
+    }
+    &__contact-link{
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        color: var(--whiteColor);
+        position: relative;
+        strong{
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+    }
+    &__contact-name{
+       color: var(--blackColor);
+       font-size: 18px; 
+    }
+    &__contact-control{
+        display: flex;
+        gap: 15px;
+        button{
+            padding: 10px;
+            background: var(--whiteColor);
+            display: block;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    }
+    &__random-bg{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 25px;
+        text-transform: uppercase;
+    }
+    &__no-contacts{
+        font-size: 18px;
+    }
+    
+}
+.one__contact{
+    &-item{
+        background: linear-gradient(0deg, rgba(103, 80, 164, 0.05), rgba(103, 80, 164, 0.05)), #FFFBFE;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        margin-bottom: 40px;
+        padding: 15px;
+        h3{
+            font-weight: 500;
+        }
+        p, a{
+            display: block;
+            color: var(--blackColor);
+            background: var(--whiteColor);
+            padding: 10px 15px;
+            margin-top: 10px;
+        }
+    }
+}
